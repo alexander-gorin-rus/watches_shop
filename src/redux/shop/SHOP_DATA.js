@@ -1,8 +1,8 @@
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+    analogWatches: {
       id: 1,
       title: 'Analog Watches',
-      routeName: 'analog-watches',
+      routeName: 'analogWatches',
       items: [
         {
           id: 1,
@@ -60,10 +60,10 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    digitalWatches: {
       id: 2,
       title: 'Digital Watches',
-      routeName: 'digital-watches',
+      routeName: 'digitalWatches',
       items: [
         {
           id: 10,
@@ -115,10 +115,10 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    hybridWatches: {
       id: 3,
       title: 'Hybrid Watches',
-      routeName: 'hybrid-watches',
+      routeName: 'hybridWatches',
       items: [
         {
           id: 18,
@@ -152,10 +152,10 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    tactileWatches: {
       id: 4,
       title: 'Tactile Watches',
-      routeName: 'tactile-watches',
+      routeName: 'tactileWatches',
       items: [
         {
           id: 23,
@@ -201,10 +201,10 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    touchscreenWatches: {
       id: 5,
       title: 'Touchscreen Watches',
-      routeName: 'touchscreen-watches',
+      routeName: 'touchscreenWatches',
       items: [
         {
           id: 30,
@@ -244,10 +244,10 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    luxuryWatches: {
       id: 6,
       title: 'Luxury Watches',
-      routeName: 'luxury-watches',
+      routeName: 'luxuryWatches',
       items: [
         {
           id: 36,
@@ -287,7 +287,7 @@ const SHOP_DATA = [
         }
       ]
     }
-  ];
+};
   
   export default SHOP_DATA;
   
