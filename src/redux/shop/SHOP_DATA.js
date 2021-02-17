@@ -2,7 +2,7 @@ const SHOP_DATA = {
     analogWatches: {
       id: 1,
       title: 'Analog Watches',
-      routeName: 'analogWatches',
+      routeName: 'analog watches',
       items: [
         {
           id: 1,
@@ -63,7 +63,7 @@ const SHOP_DATA = {
     digitalWatches: {
       id: 2,
       title: 'Digital Watches',
-      routeName: 'digitalWatches',
+      routeName: 'digital watches',
       items: [
         {
           id: 10,

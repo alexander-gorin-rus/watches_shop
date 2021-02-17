@@ -2,7 +2,8 @@ import {
     CART_DROPDOWN,
     ADD_ITEM,
     CLEAR_ITEM_FROM_CART,
-    REMOVE_ITEM
+    REMOVE_ITEM,
+    CLEAR_CART
 } from '../types';
 
 export const toggleCartHidden = () => ({
@@ -22,4 +23,8 @@ export const clearItemFromCart = item => ({
 export const removeItem = item => ({
     type: REMOVE_ITEM,
     payload: item
+});
+
+export const clearCart = () => ({
+    type: CLEAR_CART
 })

@@ -1,18 +1,35 @@
-import { CREATE_SHOP_DIRECTORY } from '../types';
-import SHOP_DATA from './SHOP_DATA';
+import { 
+    FETCH_COLLECTIONS_FAILURE,
+    FETCH_COLLECTIONS_SUCCESS,
+    FETCH_COLLECTIONS_START
+} from '../types';
 
 const INITIAL_STATE = {
-    collections: SHOP_DATA
+    collections: null,
+    isFetching: false,
+    errorMessage: undefined
 };
 
 const shopReducer = (state = INITIAL_STATE, action) => {
     const { type, payload } = action;
     switch(type){
-        case CREATE_SHOP_DIRECTORY: 
-        return {
-            ...state,
-            payload: []
+        case FETCH_COLLECTIONS_START:
+            return {
+                ...state,
+                isFetching: true
+            }
+        case FETCH_COLLECTIONS_SUCCESS: 
+            return {
+                ...state,
+                isFetching: false,
+                collections: payload
         }
+        case FETCH_COLLECTIONS_FAILURE:
+            return {
+                ...state,
+                isFetching: false,
+                errorMessage: payload
+            }
         default:
         return state
     }
